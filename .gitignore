@@ -1,0 +1,9 @@
+# macOS
+.DS_Store
+
+# latex
+*.aux
+*.fdb_latexxmk
+*.fls
+*.log
+*.synctex.gz
