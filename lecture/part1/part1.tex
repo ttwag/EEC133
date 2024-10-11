@@ -1,0 +1,344 @@
+\documentclass{article} % Defines the document class, article is commonly used
+
+\usepackage{amsmath}    % Allows for more advanced math formatting
+\usepackage{amssymb}    % Provides additional mathematical symbols
+\usepackage{amsthm}     % \qed
+\usepackage{graphicx}   % image
+\usepackage{float}      % image placement
+
+\begin{document}
+
+\title{EEC133 - Radiation Fundamentals and Basic Antennas}
+\author{Tao Wang}
+\date{\today}
+
+\maketitle
+
+\section{Spherical Coordinate}
+\begin{quote}
+    A position in spherical coordinate is characterized by $R, \space \theta, \space \phi$.
+    An infinitesimal surface area patch, $dA$, is $dA = R^2 \sin(\theta) \space d\theta d\phi$.
+    \smallskip
+
+    $d\Omega = \sin(\theta) d\theta d\phi$ is defined as the \textbf{solid angle}.
+    Therefore, $R^2 d\Omega$ is the infinitesimal surface area patch.
+\end{quote}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{./image/figure1.png}
+    \caption{Spherical Coordinate}
+\end{figure}
+
+\section{Radian and Steradian}
+\begin{itemize}
+    \item \textbf{Radian}: measure of \textit{angle}. $s = r \theta$, where $s$ is the arc length, $r$ is the radius, and $\theta$ is the angle in radian.
+    \item \textbf{Steradian}: measure of \textit{solid angle}. $A = r^2 \Omega$, where $A$ is the surface area patch, $r$ is the radius, and $\Omega$ is the solid angle.
+\end{itemize}
+
+\section{Properties of Antenna Wave}
+\begin{quote}
+    The wave propagates spherically according to the Maxwell's Equations. Moreover, we could approximate the radiated wave to be a plain wave because the wavefront looks flat and field is approximately constant.
+\end{quote}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{./image/figure2.png}
+    \caption{Spherical Electromagnetic Disturbances}
+\end{figure}
+\subsection{Power Carried By the Wave}
+\begin{quote}
+    The Poynting vector associated with the wave traveling in a lossless medium:
+    \[\vec{S}_{av} = \hat{r} S(r, \theta, \phi) = \hat{r} f(r) U(\theta, \phi)\]
+    where $U(\theta, \phi)$ is the \textbf{Radiation Intensity}.
+    \smallskip
+    We can find the total power by integrating the Poynting Vector over the surface area.
+
+    \[P(r) = \int_{\text{Sphere}} \vec{S}_{av} \cdot d\vec{A}\]
+    \[= \int_{0}^{2\pi} \int_{0}^{\pi} \hat{r} f(r)U(\theta, \phi) \cdot \hat{r} r^2 \sin(\theta) d\theta d\phi\]
+
+    We don't need to integrate the Poynting Vector over the radius because the wave can only be at one radial distance away from the center at a given time.
+
+    Since the integral doesn't depend on $r$, we have
+    \[P(r) = f(r) r^2 \int_{0}^{2\pi} \int_{0}^{\pi} U(\theta, \phi) \sin(\theta) d\theta d\phi\]
+    for simplicity, assume $f(r) = \frac{1}{r^2}$, then
+    \[P(r) = \int U(\theta, \phi) d\Omega\]
+    Therefore, the total radiated power is constant with $r$ due to the conservation of energy.
+
+    Also, since total power = sum of Radiation Intensity $\times$ solid angle, the \textbf{Radiation Intensity is in Power per Steradian}.
+\end{quote}
+
+\subsection{Isotropic Radiator}
+\begin{quote}
+    The Isotropic Radiator is an antenna that radiates equally in all directions; The radiation intensity is the same for all direction. Then,
+    \[U(\theta, \phi) = U_0\]
+
+    Note,
+    \[P_{rad} = \int U(\theta, \phi) d\Omega = U_0 \int d\Omega = U_0 4\pi\]
+    Therefore,
+    \[U_0 = \frac{P_{rad}}{4\pi}\]
+
+    We can see that the unit of $U_0$ is $\frac{\text{Watts}}{\text{Steradian}}$.
+
+\end{quote}
+
+\section{Directivity}
+\begin{quote}
+    Since the radiation intensity, $U(\phi, \theta)$, is dependent of the total radiated power, we want to define another quantity that is independent of the radiated power.
+
+    The \textbf{directivity pattern} of an antenna is the radiation intensity normalized by the radiation intensity of an isotropic radiator, which is
+    \[D(\theta, \phi) = \frac{U(\phi, \theta)}{U_0} = 4 \pi \frac{U(\theta, \phi)}{P_{rad}}\]
+
+    Notice that \[\int_{\text{sphere}}D(\theta, \phi)  d\Omega = 4 \pi\]
+
+    Since $D(\theta, \phi) = U(\theta, \phi)(\frac{4\pi}{P_{rad}})$ and the sum of $D(\theta, \phi)$ is constant in one spherical shell, we know that \textbf{more radiation intensity in one direction means less in another} since they sum to a number.
+    \bigskip
+
+    We'll define another quantity, the \textbf{Directivity}, as
+    \[D_0 = \max\{D_{\theta, \phi}(\theta, \phi)\}\]
+
+    The directivity can also be written in terms of the normalized radiation intensity.
+
+    \[D_0 = \frac{4 \pi}{\Omega_p} = \frac{4\pi}{\int_{\text{Sphere}} F(\theta, \phi) d\Omega}\]
+
+    where $\Omega_p$ is the \textbf{pattern solid angle}. The smaller it is, the greater the directivity.
+
+    The integral integrates the normalized radiation intensity, $F(\theta, \phi)$ over all direction from the sphere's center.
+
+\end{quote}
+
+\section{Beamwidth}
+
+Beamwidth tells us how much the opening is for a lobe. A lobe is a region where radiation intensity is the highest.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{./image/figure3.png}
+    \caption{Polar Plot of Radiation Intensity}
+\end{figure}
+
+The half power beamwidth is
+
+\[\theta_2 - \theta_1\]
+
+where $\theta_2$ is the angle where the normalized radiation intensity is $\frac{1}{2}$.
+
+It occurs at $\theta = \frac{\pi}{4}$ and $\theta = \frac{3\pi}{4}$.
+
+
+\section{Antenna Parameters}
+\begin{itemize}
+    \item Radiation Intensity ($\frac{\text{Watts}}{\text{Steradian}}$): the amount of power radiated by the antenna to different directions.
+          \[U(\theta, \phi)\]
+    \item Normalized Radiation Intensity (Unitless)
+          \[F(\theta, \phi) = \frac{U(\theta, \phi)}{U_{max}}\]
+    \item Directivity Pattern ($\frac{1}{\text{Steradian}}$): the radiation intensity to different directions but normalized by a constant.
+          \[D(\theta, \phi) = \frac{U(\theta, \phi)}{U_0} = 4 \pi \frac{U(\theta, \phi)}{P_{rad}}\]
+    \item Directivity ($\frac{1}{\text{Steradian}}$):
+          \[D_0 = \max\{D(\theta, \phi)\}\]
+    \item Beamwidth (Steradian): the amount of opening where radiation intensity is the highest. Note that high directivity gives small beamwidth and vice versa.
+          \[\Omega_A \approx \frac{4\pi}{D_0} \]
+    \item Gain
+          \[G_0 = \text{Efficiency} \times D_0\]
+          where efficiency is $\frac{P_{rad}}{P_{in}}$
+\end{itemize}
+
+\section{Circuit Model of an Antenna}
+\begin{figure}[H]2
+    \centering
+    \includegraphics[width=0.5\textwidth]{./image/figure9.png}
+    \caption{Circuit Model of an Antenna}
+\end{figure}
+\subsection{Power}
+\begin{quote}
+    Since the antenna dissipates power, radiate power, and reflects the transmitted power, we can model it as a load impedance that has resistance and reactance.
+    \[Z_A = R_L + R_{rad} + j X_A\]
+
+    We know that
+    \[P_{in} = \frac{1}{2}|\tilde{I}|^2 (R_{rad} + R_L)\]
+
+    Therefore,
+    \[e = \frac{P_{rad}}{P_{in}} = \frac{\frac{1}{2}|\tilde{I}|^2 (R_{rad})}{P_{in} = \frac{1}{2}|\tilde{I}|^2 (R_{rad} + R_L)} = \frac{R_{rad}}{R_{rad} + R_L}\]
+\end{quote}
+
+\subsection{Optimizing $P_{in}$}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{./image/figure5.png}
+    \caption{Thevinen Equivalent of Transmitter with Antenna as Load}
+\end{figure}
+\begin{quote}
+    We can model the antenna as an impedance, $Z_A$, and the transmitted signal as a thevinen equivalent.
+
+    Using some calculus, we will find that the maximum power is transferred to $Z_A$ when
+    \[Z_g = Z_A^*\]
+
+    When power is maximally transferred, $P_{in}$ is
+    \[P_{in} = \frac{1}{2}|\tilde{I}|^2 R_A = \frac{1}{2}\left(\frac{|\tilde{V}_{TH}|}{2R_A}\right)^2R_A = \frac{|\tilde{V}_{TH}|^2}{8R_A}\]
+\end{quote}
+
+\subsection{Optimizing $P_{out}$}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{./image/figure6.png}
+    \caption{Thevinen Equivalent of Receiver with Antenna as Transmitter}
+\end{figure}
+
+\begin{quote}
+    Our goal is to have the antenna's power fully dissipated by $Z_L$.
+    This is an identical problem as optimizing $P_{in}$. Therefore,
+
+    \[Z_g = Z_A^*\]
+
+    In this case, $P_{out}$ is
+    \[P_{out} = \frac{1}{2}|\tilde{I}|^2 R_A = \frac{1}{2}\left(\frac{|\tilde{V}_{TH}|}{2R_A}\right)^2R_A = \frac{|\tilde{V}_{TH}|^2}{8R_A}\]
+\end{quote}
+
+\subsection{Thevinen Voltage of the Antenna}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{./image/figure7.png}
+    \caption{Thevinen Voltage of Antenna}
+\end{figure}
+\begin{quote}
+    Power delivered to a matched load with a lossless antenna
+
+    \[P_{out} = A_e S_i\]
+
+    \[\frac{|\tilde{V}_{TH}|^2}{8R_A} = A_e S_i\]
+
+    \[|\tilde{V}_{TH}| = \sqrt{8 R_A A_e S_i}\]
+\end{quote}
+
+\section{Antenna Links}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{./image/figure8.png}
+    \caption{Antenna Link}
+\end{figure}
+
+\begin{quote}
+    When one antenna transmits a signal to the other antenna, the power ratio between the transmitter and the receiver could be modeled by the \textbf{Friis Transmission Equation}.
+
+    \[\frac{P_{rec}}{P_{t}} = e_r e_t \left(\frac{\lambda}{4\pi R}\right)^2 D_r D_t\]
+    \[= \frac{e_r e_t A_r A_t}{\lambda^2 R^2}\]
+
+    where $A_r$, $A_t$ are the effective area of the antenna, $e_r, e_t$ are the efficiency of the antenna, $\lambda$ is the wavelength of the transmitted wave, and $D_r, D_t$ are the directivity of the antennas.
+
+
+\end{quote}
+
+\begin{quote}
+    The signal to noise ratio: $10 \log\left(\frac{P_{\text{receive}}}{P_{\text{noise}}}\right)$
+\end{quote}
+
+\section{Maxwell's Equation}
+\begin{quote}
+    % Add the differential version
+
+    The divergence of E field is proportional to enclosed charge because more charges produces more E field.
+
+    $$\vec{\nabla} \cdot \vec{E} = \frac{\rho}{\epsilon}$$
+
+    $$\oint \vec{E} \cdot d\vec{A} = \frac{Q_{enclosed}}{\epsilon_0}$$
+
+
+    The divergence of H field is zero because there's no magnetic monopole. H field will enter and leave at every point.
+
+    $$\vec{\nabla} \cdot \vec{H} = 0$$
+
+    $$\oint \vec{B} \cdot d\vec{A} = 0$$
+
+    The curl of the E field is zero in static case, just like Kirchhoff's Voltage law that sums the voltage to 0. The dynamic case shows that the curl is proportional to the change in magnetic flux through the loop.
+
+    $$\vec{\nabla} \times \vec{E} = -\mu \frac{\partial \vec{H}}{\partial t}$$
+
+    $$\oint \vec{E} \cdot d\vec{l} = -\frac{d\phi_B}{dt}$$
+
+    The curl of the H fieldis is propotional to the current density plus the change in E flux through the loop.
+
+    $$\vec{\nabla} \times \vec{H} = \epsilon \frac{\partial \vec{E}}{\partial t}$$
+
+    $$\oint \vec{B} \cdot d\vec{l} = \mu_0 i + \mu_0 \epsilon_0 \frac{d \phi_E}{dt}$$
+\end{quote}
+
+\subsubsection{Inhomogeneous Wave Equation}
+\begin{quote}
+    When we construct the wave equation with Maxwell's Equation with source, we get
+    \[\vec{\nabla}^2\vec{E}-\mu_0\epsilon_0 \frac{\partial ^2}{\partial t^2}\vec{E} = \vec{\nabla}\left(\frac{\rho}{\epsilon_0}\right) + \mu_0 \frac{\partial}{\partial t} \vec{J}\]
+
+    We can think of the left hand side of the equation as a system created by physical laws, and the right hand side as the input to the system. After the input (charges and currents) is applied, the system will output some E field.
+
+    It's similar to the motion of a spring and mass system.
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.5\textwidth]{./image/figure4.png}
+        \caption{Spring-Mass System}
+    \end{figure}
+
+    \[m \frac{d^2 x}{dt^2} = -kx -bv + F(t)\]
+
+    By rearranging the terms, we get
+
+    \[m \frac{d^2 x}{dt^2} + b\frac{dx}{dt} + kx = F(t)\]
+
+    Notice that the left hand side is a system that spits out the position of the mass, and the right hand side is the applied input force.
+\end{quote}
+
+\subsection{Vector Potential and Gauges}
+\begin{quote}
+    Since
+    \[\vec{\nabla} \times \vec{H} = \vec{J} + \epsilon_0 \frac{\partial \vec{E}}{\partial t}\]
+
+    and
+
+    \[\vec{\nabla} \cdot \left(\vec{\nabla \times \vec{f}}\right) = 0\]
+
+    the H and E field can be written in terms of the \textbf{Vector Potential}
+
+    \[\vec{H} = \frac{1}{\mu_0} \vec{\nabla} \times \vec{A} \]
+
+    \[\vec{E} = -\vec{\nabla}\phi - \frac{\partial \vec{A}}{\partial t}\]
+
+
+
+\end{quote}
+\subsection{Interesting Property}
+\begin{quote}
+    \[\vec{A}_{new} = \vec{A} + \vec{\nabla}\psi\]
+
+    Curl both sides
+
+    \[\frac{1}{\mu_0}\vec{\nabla} \times \vec{A}_{new} = \frac{1}{\mu_0}\vec{\nabla} \times \vec{A} + \frac{1}{\mu_0}\vec{\nabla} \times \vec{\nabla}\psi\]
+
+    Notice
+
+    \[\vec{H}_{new} = \vec{H}\]
+
+    In the case of an E field,
+
+    If $\psi_{new} = \phi - \frac{\partial \psi}{\partial t}$, then $\vec{E}_{new} = \vec{E}$
+
+    \bigskip
+    In summary,
+
+    \[\psi_{new} = \phi - \frac{\partial \psi}{\partial t}\]
+
+    and
+
+    \[\vec{A}_{new} = \vec{A} + \vec{\nabla}\psi\]
+
+    implies
+
+    E and H field produced by $\phi_{new}$ $\vec{A}_{new}$ are same as those made by $\phi$ and $\vec{A}$
+\end{quote}
+% Gauges - Coulomb Gauge and Lorentz Gauge
+
+%Rewrite the inhomogeous wave equation with the vector potential
+
+\section{Retarded Potential}
+
+
+\end{document}
