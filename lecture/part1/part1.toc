@@ -1,0 +1,27 @@
+\contentsline {section}{\numberline {1}Spherical Coordinate}{2}{section.1}%
+\contentsline {section}{\numberline {2}Radian and Steradian}{2}{section.2}%
+\contentsline {section}{\numberline {3}Properties of Antenna Wave}{3}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Power Carried By the Wave}{3}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Isotropic Radiator}{4}{subsection.3.2}%
+\contentsline {section}{\numberline {4}Directivity}{4}{section.4}%
+\contentsline {section}{\numberline {5}Beamwidth}{5}{section.5}%
+\contentsline {section}{\numberline {6}Antenna Parameters}{6}{section.6}%
+\contentsline {section}{\numberline {7}Circuit Model of an Antenna}{6}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Power}{6}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Optimizing $P_{in}$}{7}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Optimizing $P_{out}$}{8}{subsection.7.3}%
+\contentsline {subsection}{\numberline {7.4}Thevenin Voltage of the Antenna}{9}{subsection.7.4}%
+\contentsline {section}{\numberline {8}Antenna Links}{10}{section.8}%
+\contentsline {section}{\numberline {9}Maxwell's Equation}{10}{section.9}%
+\contentsline {subsubsection}{\numberline {9.0.1}Inhomogeneous Wave Equation}{11}{subsubsection.9.0.1}%
+\contentsline {subsection}{\numberline {9.1}Vector Potential and Gauges}{12}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}Interesting Property}{13}{subsection.9.2}%
+\contentsline {section}{\numberline {10}Retarded Potential}{13}{section.10}%
+\contentsline {section}{\numberline {11}The Hertzian Dipole}{13}{section.11}%
+\contentsline {subsection}{\numberline {11.1}Basics of Hertzian Dipole}{13}{subsection.11.1}%
+\contentsline {subsection}{\numberline {11.2}Hertzian Dipole's Antenna Parameter}{15}{subsection.11.2}%
+\contentsline {section}{\numberline {12}Small Dipole Antenna}{16}{section.12}%
+\contentsline {section}{\numberline {13}Finite Dipole Antenna}{17}{section.13}%
+\contentsline {section}{\numberline {14}Physical Intuition on Radiation}{17}{section.14}%
+\contentsline {subsection}{\numberline {14.1}Why Transmission Line doesn't Radiate Wave}{17}{subsection.14.1}%
+\contentsline {section}{\numberline {15}What Makes a Good Antenna?}{17}{section.15}%

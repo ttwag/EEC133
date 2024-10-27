@@ -5,6 +5,12 @@
 \usepackage{amsthm}     % \qed
 \usepackage{graphicx}   % image
 \usepackage{float}      % image placement
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,       % false: boxed links; true: colored links
+    linkcolor=black,       % color of internal links
+}
+\usepackage[margin=1.5in]{geometry}
 
 \begin{document}
 
@@ -13,6 +19,7 @@
 \date{\today}
 
 \maketitle
+\tableofcontents
 
 \section{Spherical Coordinate}
 \begin{quote}
@@ -164,10 +171,10 @@ It occurs at $\theta = \frac{\pi}{4}$ and $\theta = \frac{3\pi}{4}$.
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.5\textwidth]{./image/figure5.png}
-    \caption{Thevinen Equivalent of Transmitter with Antenna as Load}
+    \caption{Thevenin Equivalent of Transmitter with Antenna as Load}
 \end{figure}
 \begin{quote}
-    We can model the antenna as an impedance, $Z_A$, and the transmitted signal as a thevinen equivalent.
+    We can model the antenna as an impedance, $Z_A$, and the transmitted signal as a thevenin equivalent.
 
     Using some calculus, we will find that the maximum power is transferred to $Z_A$ when
     \[Z_g = Z_A^*\]
@@ -181,7 +188,7 @@ It occurs at $\theta = \frac{\pi}{4}$ and $\theta = \frac{3\pi}{4}$.
 \begin{figure}[H]
     \centering
     \includegraphics[width=1\textwidth]{./image/figure6.png}
-    \caption{Thevinen Equivalent of Receiver with Antenna as Transmitter}
+    \caption{Thevenin Equivalent of Receiver with Antenna as Transmitter}
 \end{figure}
 
 \begin{quote}
@@ -194,11 +201,11 @@ It occurs at $\theta = \frac{\pi}{4}$ and $\theta = \frac{3\pi}{4}$.
     \[P_{out} = \frac{1}{2}|\tilde{I}|^2 R_A = \frac{1}{2}\left(\frac{|\tilde{V}_{TH}|}{2R_A}\right)^2R_A = \frac{|\tilde{V}_{TH}|^2}{8R_A}\]
 \end{quote}
 
-\subsection{Thevinen Voltage of the Antenna}
+\subsection{Thevenin Voltage of the Antenna}
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.5\textwidth]{./image/figure7.png}
-    \caption{Thevinen Voltage of Antenna}
+    \caption{Thevenin Voltage of Antenna}
 \end{figure}
 \begin{quote}
     Power delivered to a matched load with a lossless antenna
@@ -239,26 +246,26 @@ It occurs at $\theta = \frac{\pi}{4}$ and $\theta = \frac{3\pi}{4}$.
 
     The divergence of E field is proportional to enclosed charge because more charges produces more E field.
 
-    $$\vec{\nabla} \cdot \vec{E} = \frac{\rho}{\epsilon}$$
+    $$\nabla \cdot \vec{E} = \frac{\rho}{\epsilon}$$
 
     $$\oint \vec{E} \cdot d\vec{A} = \frac{Q_{enclosed}}{\epsilon_0}$$
 
 
     The divergence of H field is zero because there's no magnetic monopole. H field will enter and leave at every point.
 
-    $$\vec{\nabla} \cdot \vec{H} = 0$$
+    $$\nabla \cdot \vec{H} = 0$$
 
     $$\oint \vec{B} \cdot d\vec{A} = 0$$
 
     The curl of the E field is zero in static case, just like Kirchhoff's Voltage law that sums the voltage to 0. The dynamic case shows that the curl is proportional to the change in magnetic flux through the loop.
 
-    $$\vec{\nabla} \times \vec{E} = -\mu \frac{\partial \vec{H}}{\partial t}$$
+    $$\nabla \times \vec{E} = -\mu \frac{\partial \vec{H}}{\partial t}$$
 
     $$\oint \vec{E} \cdot d\vec{l} = -\frac{d\phi_B}{dt}$$
 
-    The curl of the H fieldis is propotional to the current density plus the change in E flux through the loop.
+    The curl of the H field is proportional to the current density plus the change in E flux through the loop.
 
-    $$\vec{\nabla} \times \vec{H} = \epsilon \frac{\partial \vec{E}}{\partial t}$$
+    $$\nabla \times \vec{H} = \epsilon \frac{\partial \vec{E}}{\partial t}$$
 
     $$\oint \vec{B} \cdot d\vec{l} = \mu_0 i + \mu_0 \epsilon_0 \frac{d \phi_E}{dt}$$
 \end{quote}
@@ -266,7 +273,7 @@ It occurs at $\theta = \frac{\pi}{4}$ and $\theta = \frac{3\pi}{4}$.
 \subsubsection{Inhomogeneous Wave Equation}
 \begin{quote}
     When we construct the wave equation with Maxwell's Equation with source, we get
-    \[\vec{\nabla}^2\vec{E}-\mu_0\epsilon_0 \frac{\partial ^2}{\partial t^2}\vec{E} = \vec{\nabla}\left(\frac{\rho}{\epsilon_0}\right) + \mu_0 \frac{\partial}{\partial t} \vec{J}\]
+    \[\nabla^2\vec{E}-\mu_0\epsilon_0 \frac{\partial ^2}{\partial t^2}\vec{E} = \nabla\left(\frac{\rho}{\epsilon_0}\right) + \mu_0 \frac{\partial}{\partial t} \vec{J}\]
 
     We can think of the left hand side of the equation as a system created by physical laws, and the right hand side as the input to the system. After the input (charges and currents) is applied, the system will output some E field.
 
@@ -289,29 +296,34 @@ It occurs at $\theta = \frac{\pi}{4}$ and $\theta = \frac{3\pi}{4}$.
 
 \subsection{Vector Potential and Gauges}
 \begin{quote}
-    Since
-    \[\vec{\nabla} \times \vec{H} = \vec{J} + \epsilon_0 \frac{\partial \vec{E}}{\partial t}\]
 
-    and
+    We define the \textbf{vector potential}, $\vec{A}$, as
+    \[\vec{B} = \nabla \times \vec{A}\]
 
-    \[\vec{\nabla} \cdot \left(\vec{\nabla \times \vec{f}}\right) = 0\]
-
-    the H and E field can be written in terms of the \textbf{Vector Potential}
-
-    \[\vec{H} = \frac{1}{\mu_0} \vec{\nabla} \times \vec{A} \]
-
-    \[\vec{E} = -\vec{\nabla}\phi - \frac{\partial \vec{A}}{\partial t}\]
+    Since $\nabla \times \vec{E} = - \frac{\partial \vec{B}}{\partial t}$
 
 
+
+
+    \[\vec{E} = - \nabla \phi - \frac{\partial \vec{A}}{\partial t}\]
+
+    where $\phi$ is the electrostatic potential.
+
+    \bigskip
+    As a result, the H and E field can be written in terms of the \textbf{Vector Potential}
+
+    \[\vec{H} = \frac{1}{\mu_0} \nabla \times \vec{A} \]
+
+    \[\vec{E} = -\nabla\phi - \frac{\partial \vec{A}}{\partial t}\]
 
 \end{quote}
 \subsection{Interesting Property}
 \begin{quote}
-    \[\vec{A}_{new} = \vec{A} + \vec{\nabla}\psi\]
+    \[\vec{A}_{new} = \vec{A} + \nabla\psi\]
 
     Curl both sides
 
-    \[\frac{1}{\mu_0}\vec{\nabla} \times \vec{A}_{new} = \frac{1}{\mu_0}\vec{\nabla} \times \vec{A} + \frac{1}{\mu_0}\vec{\nabla} \times \vec{\nabla}\psi\]
+    \[\frac{1}{\mu_0}\nabla \times \vec{A}_{new} = \frac{1}{\mu_0}\nabla \times \vec{A} + \frac{1}{\mu_0}\nabla \times \nabla\psi\]
 
     Notice
 
@@ -319,26 +331,165 @@ It occurs at $\theta = \frac{\pi}{4}$ and $\theta = \frac{3\pi}{4}$.
 
     In the case of an E field,
 
-    If $\psi_{new} = \phi - \frac{\partial \psi}{\partial t}$, then $\vec{E}_{new} = \vec{E}$
+    If $\phi_{new} = \phi - \frac{\partial \psi}{\partial t}$, then $\vec{E}_{new} = \vec{E}$
 
     \bigskip
     In summary,
 
-    \[\psi_{new} = \phi - \frac{\partial \psi}{\partial t}\]
+    \[\phi_{new} = \phi - \frac{\partial \psi}{\partial t}\]
 
     and
 
-    \[\vec{A}_{new} = \vec{A} + \vec{\nabla}\psi\]
+    \[\vec{A}_{new} = \vec{A} + \nabla\psi\]
 
     implies
 
-    E and H field produced by $\phi_{new}$ $\vec{A}_{new}$ are same as those made by $\phi$ and $\vec{A}$
+    \bigskip
+    E and H field produced by $\phi_{new}$ and $\vec{A}_{new}$ are same as those made by $\phi$ and $\vec{A}$
 \end{quote}
-% Gauges - Coulomb Gauge and Lorentz Gauge
 
-%Rewrite the inhomogeous wave equation with the vector potential
+%Rewrite the inhomogeneous wave equation with the vector potential
 
 \section{Retarded Potential}
+
+\section{The Hertzian Dipole}
+\begin{quote}
+    \subsection{Basics of Hertzian Dipole}
+    \begin{itemize}
+        \item A very short ($l \leq \frac{\lambda}{50}$) infinitesimally thin, wire carrying a uniform current.
+    \end{itemize}
+
+    $\vec{J}(\vec{r'}) = I_0 \delta(x)\delta(y)$
+
+    Recall that we are in sinusoidal steady state.
+
+    \[\rho(\vec{r}, t) = \Re \{\tilde{\rho}(\vec{r})e^{j \omega t}\}\]
+
+    \[\vec{J}(\vec{r}, t) = \Re \{\tilde{J}(\vec{r})e^{j \omega t}\}\]
+
+    Procedure to find the Antenna Parameters of the Hertzian Dipole
+    \begin{enumerate}
+        \item Calculate $\tilde{A}(\vec{r})$ using retarded potentials.
+              \[\tilde{A} = \frac{\mu_0}{4 \pi}\int \frac{\vec{J}(\vec{r'})}{R}e^{-jkR}dV'\]
+              Since R = r and is approximately constant every point on the wire,
+              \[= \frac{\mu_0}{4 \pi}\frac{e^{-jkr}}{r} \int \vec{J}(\vec{r'})dV'\]
+              \[= \frac{\mu_0}{4 \pi}\frac{e^{-jkr}}{r}\int \int \vec{J}(\vec{r'})  I_0 \delta(x)\delta(y) \cdot d\vec{A} dz\]
+              \[\frac{\mu_0}{4 \pi}\frac{e^{-jkr}}{r}\int_{\frac{-l}{2}}^{\frac{l}{2}}I_0 \vec{z} dz\]
+              \[= \frac{\mu_0 I_0 l}{4 \pi}\frac{e^{-jkr}}{r}\vec{z}\]
+              \[= \frac{\mu_0 I_0 l}{4 \pi}\frac{e^{-jkr}}{r}(\cos(\theta) \hat{r} -\sin(\theta) \hat{\theta})\]
+        \item Find H and E fields from $\tilde{A}(\vec{r})$.
+
+              \bigskip
+              Taking the curl in spherical coordinate
+              \[\tilde{H} = \frac{1}{\mu_0}\frac{\mu_0 I_0 l e^{-jkr}}{4 \pi}\left(\frac{j}{kr} + \frac{1}{(kr)^2}\right)\sin(\theta)\hat{\phi}\]
+              % Miss a term
+              \[\tilde{E}= \frac{I_0 l k^2}{4 \pi}\eta_0 e^{-jkr}(\left(\frac{1}{kr} - \frac{j}{(kr)^3}\right)2\cos(\theta)\hat{\phi}) \]
+        \item Break the H and E field into Near and Far Fields.
+
+              \bigskip
+              E field looks very complicated, so we will define two regions of $kr$ that simplifies the expression
+
+              \bigskip
+              Near Field: $kr << 1 \implies \frac{2 \pi}{\lambda} r << 1$
+              \[\tilde{H}_{nF} = \frac{I_0 l}{4 \pi r^2}\sin(\theta) \hat{\phi}\]
+              \[\tilde{E}_{nF} = \frac{q l}{4 \pi \epsilon_0 r^3}(2 \cos(\theta) \hat{r} + \sin(\theta) \hat{\theta})\]
+
+              Notice that it looks like an electrostatic dipole
+
+              \bigskip
+              Far Field: $kr >> 1$ (generally what we care about)
+              \[\tilde{H}_{FF} = \frac{\tilde{E}_{FF}}{\eta_0}\hat{\phi}\]
+              \[\tilde{E}_{FF} = j\eta_0\frac{I_0 l k^2}{4 \pi} e^{-jkr}\sin(\theta)\hat{\theta}\]
+
+        \item Find $\vec{S}_{avg}$ and antenna parameters.
+              \[\vec{S}_{avg} = \frac{1}{2}\Re\{\tilde{E} \times \tilde{H}\}\]
+              \[= \frac{1}{2 \eta_0} |\tilde{E}_{FF}|^2 \hat{r}\]
+
+
+              Therefore,
+              \[| \vec{S}_{avg} | = \frac{1}{2 \eta_0} \left(\eta_0 \frac{Ilk}{4 \pi r}\sin(\theta)\right)^2 = \frac{15 \pi I_0 ^2}{r^2}\left(\frac{l}{\lambda}\right)^2 \sin^2(\theta)\]
+    \end{enumerate}
+\end{quote}
+
+\subsection{Hertzian Dipole's Antenna Parameter}
+\begin{quote}
+    We knew that the power radiated would be $\frac{1}{r^2} U(\theta, \phi)$. Therefore, the \textbf{radiation intensity} of a Hertzian Dipole is
+    \[15 \pi I_0 ^2\left(\frac{l}{\lambda}\right)^2 \sin^2(\theta\]
+
+    and the \textbf{normalized radiation intensity} is
+
+    \[F(\theta, \phi) = \sin^2(\theta)\]
+
+    The \textbf{total radiated power} is
+
+    \[P_{rad} = \int U(\theta, \phi) d\Omega = \frac{8 \pi}{3}\]
+
+    The \textbf{directivity pattern} is
+
+    \[D(\theta,\phi) = \frac{U(\theta, \phi)}{\frac{P_{rad}}{4 \pi}} = 1.5 \sin^2(\theta)\]
+
+    The \textbf{directivity} is $D_0 = 1.5$.
+
+    When the circuit model of a Hertzian Dipole Antenna is lossless, the radiation loss equals the $R_{rad}$ of the antenna's equivalent resistance, which isotropic
+    \[R_{rad} = 80 \pi^2 \left(\frac{l}{\lambda}\right)^2\]
+
+    Since $l < \frac{\lambda}{50}$ for the Hertzian Dipole Antenna,
+    \[R_{rad} < 80 \pi^2 \left(\frac{1}{50}\right)^2 = 0.32 \Omega\]
+
+    We can see that the radiation resistance is very small, which could make it hard to match the resistance because the characteristic impedance of a transmission line is much larger.
+
+    Effective area of the antenna is
+
+    \[A_e = \frac{P_{int}}{S_i}\]
+
+    When the antenna receives signal, the lossless condition implies that all intercepted power
+
+    \[A_e = \frac{P_{int}}{S_i} = \frac{1}{8}\frac{|\tilde{V}_{oc}|^2}{R_{rad}} \frac{2 \eta_0}{|\tilde{E_i}|^2}\]
+
+    Since,
+
+    \[|\tilde{V}_{oc} | \approx | \tilde{E}_i|\], we have
+
+    \[A_e = \frac{3}{8 \pi} \lambda^2\]
+
+
+\end{quote}
+
+\section{Small Dipole Antenna}
+
+\begin{quote}
+    The short dipole antenna has no current at the ends of the antenna, unlike the Hertzian Dipole Antenna (HD Antenna) with constant current everywhere.
+
+    If we follow the steps of calculating vector potential of the HD Antenna, we will find that $\tilde{A}$ is half of that of the HD Antenna. Thus, the small dipole antenna gives half of the E and H fields compared to the HD Antenna.
+
+    \[l \leq \frac{\lambda}{10}\]
+
+    \[\tilde{A} = \left(\frac{1}{2}\right)\frac{\mu_0 I_0 l}{4 \pi}\frac{e^{-jkr}}{r}(\cos(\theta) \hat{r} -\sin(\theta) \hat{\theta})\]
+
+    \[U(\theta, \phi) = \frac{15 \pi I_0 ^2\left(\frac{l}{\lambda}\right)^2}{4} \sin^2(\theta)\]
+
+    \[P_{rad} = \]
+
+    \[D(\theta, \phi) = 1.5 \sin^2(\theta)\]
+
+    \[R_{rad} = 20 \pi^2 \left(\frac{l}{\lambda}\right)^2\]
+
+    \[A_e = \frac{3 \lambda ^2}{8 \pi}\]
+\end{quote}
+
+\section{Finite Dipole Antenna}
+\begin{quote}
+    Current goes to 0 at the end of the pole. There's a standing wave current pattern on the poles.
+\end{quote}
+
+\section{Physical Intuition on Radiation}
+\subsection{Why Transmission Line doesn't Radiate Wave}
+
+\section{What Makes a Good Antenna?}
+\begin{itemize}
+    \item Good Radiation Pattern
+    \item Good matching (nice circuit properties)
+\end{itemize}
 
 
 \end{document}
