@@ -1,0 +1,39 @@
+\documentclass{article} % Defines the document class, article is commonly used
+\usepackage[shortlabels]{enumitem}
+\usepackage{amsmath}    % Allows for more advanced math formatting
+\usepackage{amssymb}    % Provides additional mathematical symbols
+\usepackage{amsthm}     % \qed
+\usepackage{graphicx}   % image
+\usepackage{float}      % image placement
+\usepackage{siunitx}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,       % false: boxed links; true: colored links
+    linkcolor=black,       % color of internal links
+}
+\usepackage[margin=1.5in]{geometry}
+
+\begin{document}
+
+\title{EEC133 Pre-Lab 2: Loop Antennas}
+\author{Tao Wang}
+\date{\today}
+
+\maketitle
+\tableofcontents
+
+\section*{Part 1: Loop Antenna Design}
+\addcontentsline{toc}{section}{Loop Antenna Design}
+
+\subsection*{Questions:}
+\begin{enumerate}
+    \item $r = 0.0064 \si{m}$. $\lambda = \frac{c}{f} = 0.12 \si{m}$. $r \leq \frac{\lambda}{6 \pi} \approx 0.00637 \si{m}$.
+    \item
+          \[\text{Radiation Resistance: }320 \pi^6 \left(\frac{0.00637}{0.12}\right)^4 = 2.44 \Omega \]
+          \[\text{Directivity: } 1.5\]
+          \[\text{Half-power beamwidth: } \frac{\pi}{2}\]
+          \[\text{Far Field Requirement: } r >> \frac{0.12}{2\pi} = 0.019 \si{m}\]
+\end{enumerate}
+
+
+\end{document}
