@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1730703038.25535 "/Users/taowang/Desktop/EEC133/lab/lab2/pre-lab/pre_lab2.tex" "pre_lab2.pdf" "pre_lab2" 1730703038.80297 0
-  "/Users/taowang/Desktop/EEC133/lab/lab2/pre-lab/pre_lab2.tex" 1730703038.02598 1277 6adf57c28a3186c553b6a43ed7185bb2 ""
+["pdflatex"] 1731173020.70009 "/Users/taowang/Desktop/EEC133/lab/lab2/pre-lab/pre_lab2.tex" "pre_lab2.pdf" "pre_lab2" 1731173021.22884 2
+  "/Users/taowang/Desktop/EEC133/lab/lab2/pre-lab/pre_lab2.tex" 1731173019.87462 2263 72f5e9f10bcc06f59ec57cdbf894dac4 ""
   "/opt/homebrew/Cellar/texlive/20240312_1/share/texmf-dist/fonts/map/fontname/texfonts.map" 1710106625 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/opt/homebrew/Cellar/texlive/20240312_1/share/texmf-dist/fonts/map/pdftex/updmap/pdftex.map" 1710106625 5472554 f7861620179a71a79d4bd86251f559d0 ""
   "/opt/homebrew/Cellar/texlive/20240312_1/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1710106625 1004 54797486969f23fa377b128694d548df ""
@@ -24,6 +24,7 @@
   "/opt/homebrew/Cellar/texlive/20240312_1/share/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm" 1710106625 1124 6c73e740cf17375f03eec0ee63599741 ""
   "/opt/homebrew/Cellar/texlive/20240312_1/share/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm" 1710106625 1116 933a60c408fc0a863a92debe84b2d294 ""
   "/opt/homebrew/Cellar/texlive/20240312_1/share/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm" 1710106625 1120 8b7d695260f3cff42e636090a8002094 ""
+  "/opt/homebrew/Cellar/texlive/20240312_1/share/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm" 1710106625 768 1321e9409b4137d6fb428ac9dc956269 ""
   "/opt/homebrew/Cellar/texlive/20240312_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb" 1710106625 34811 78b52f49e893bcba91bd7581cdc144c0 ""
   "/opt/homebrew/Cellar/texlive/20240312_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1710106625 32080 340ef9bf63678554ee606688e7b5339d ""
   "/opt/homebrew/Cellar/texlive/20240312_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb" 1710106625 30251 6afa5cb1d0204815a708a080681d4674 ""
@@ -34,6 +35,8 @@
   "/opt/homebrew/Cellar/texlive/20240312_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb" 1710106625 32362 179c33bbf43f19adbb3825bb4e36e57a ""
   "/opt/homebrew/Cellar/texlive/20240312_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1710106625 32762 224316ccc9ad3ca0423a14971cfa7fc1 ""
   "/opt/homebrew/Cellar/texlive/20240312_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1710106625 32569 5e5ddc8df908dea60932f3c484a54c0d ""
+  "/opt/homebrew/Cellar/texlive/20240312_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb" 1710106625 32716 08e384dc442464e7285e891af9f45947 ""
+  "/opt/homebrew/Cellar/texlive/20240312_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb" 1710106625 31099 c85edf1dd5b9e826d67c9c7293b6786c ""
   "/opt/homebrew/Cellar/texlive/20240312_1/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1710106625 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/opt/homebrew/Cellar/texlive/20240312_1/share/texmf-dist/tex/generic/atbegshi/atbegshi.sty" 1710106625 24708 5584a51a7101caf7e6bbf1fc27d8f7b1 ""
   "/opt/homebrew/Cellar/texlive/20240312_1/share/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty" 1710106625 40635 c40361e206be584d448876bba8a64a3b ""
@@ -97,10 +100,11 @@
   "/opt/homebrew/Cellar/texlive/20240312_1/share/texmf-dist/tex/latex/url/url.sty" 1710106625 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "/opt/homebrew/Cellar/texlive/20240312_1/share/texmf-dist/web2c/texmf.cnf" 1710106625 41652 e14926ab86fde7902cad99d9eeaa5ca5 ""
   "/opt/homebrew/Cellar/texlive/20240312_1/share/texmf-var/web2c/pdftex/pdflatex.fmt" 1710106625 8221851 5146b755db1b51297976139fe7739199 ""
-  "pre_lab2.aux" 1730703038.7474 264 237a1c0fd8644e15b3e0017bee003929 "pdflatex"
-  "pre_lab2.out" 1730703038.74782 145 494b2cf060d6171f9fc25774d476ec67 "pdflatex"
-  "pre_lab2.tex" 1730703038.02598 1277 6adf57c28a3186c553b6a43ed7185bb2 ""
-  "pre_lab2.toc" 1730703038.74801 61 cccd58b186f8bc94cc127ae0a02aed46 "pdflatex"
+  "image/figure1.png" 0 -1 0 ""
+  "pre_lab2.aux" 1731173021.17155 582 0f1df352e62cbc8a4377fc764bc67077 "pdflatex"
+  "pre_lab2.out" 1731173021.172 445 fc2eb4613301af2739f59d909600a46c "pdflatex"
+  "pre_lab2.tex" 1731173019.87462 2263 72f5e9f10bcc06f59ec57cdbf894dac4 ""
+  "pre_lab2.toc" 1731173021.1723 186 0ee2edb0b118b48d14ff4c52c01961d0 "pdflatex"
   (generated)
   "pre_lab2.aux"
   "pre_lab2.log"

@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1730337022.95239 "/Users/taowang/Desktop/EEC133/lecture/part1/part1.tex" "part1.pdf" "part1" 1730337023.99604 0
-  "/Users/taowang/Desktop/EEC133/lecture/part1/part1.tex" 1730337021.5754 19680 3111fef07fb8667d935206061d4343ac ""
+["pdflatex"] 1730946936.04112 "/Users/taowang/Desktop/EEC133/lecture/part1/part1.tex" "part1.pdf" "part1" 1730946937.05357 0
+  "/Users/taowang/Desktop/EEC133/lecture/part1/part1.tex" 1730946933.74954 20217 115a16447630c9097699732f6be9efa2 ""
   "/opt/homebrew/Cellar/texlive/20240312_1/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1710106625 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/opt/homebrew/Cellar/texlive/20240312_1/share/texmf-dist/fonts/map/fontname/texfonts.map" 1710106625 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/opt/homebrew/Cellar/texlive/20240312_1/share/texmf-dist/fonts/map/pdftex/updmap/pdftex.map" 1710106625 5472554 f7861620179a71a79d4bd86251f559d0 ""
@@ -112,10 +112,10 @@
   "image/figure7.png" 1728435621.54281 224921 2199d8f5d55b94b54e8fd0bf9bfa8d7d ""
   "image/figure8.png" 1728436063.96882 144447 d8febb23eafdb3ba10fc53aaefc579fa ""
   "image/figure9.png" 1728516081.57869 250210 de42e10be204a5f5e3c8d805f48a325e ""
-  "part1.aux" 1730337023.92541 4937 9e4f151fc1f04baaaf79aefc0be50ed1 "pdflatex"
-  "part1.out" 1730337023.92631 4542 1e98ea8609ebe80ff699f9a993db19f0 "pdflatex"
-  "part1.tex" 1730337021.5754 19680 3111fef07fb8667d935206061d4343ac ""
-  "part1.toc" 1730337023.92652 2336 7e9b4747595d8a9edb1ef5b5ae0f9020 "pdflatex"
+  "part1.aux" 1730946936.98433 5295 66295da4a7b1a53ef38a1b9aa716902b "pdflatex"
+  "part1.out" 1730946936.98519 4944 36a03a7193da90b223eed7655958c02a "pdflatex"
+  "part1.tex" 1730946933.74954 20217 115a16447630c9097699732f6be9efa2 ""
+  "part1.toc" 1730946936.98542 2571 08a2102106b8753ab7ee21ee752e4c72 "pdflatex"
   (generated)
   "part1.aux"
   "part1.log"
