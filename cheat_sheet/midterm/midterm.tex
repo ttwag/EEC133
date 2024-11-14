@@ -1,0 +1,125 @@
+\documentclass{article} % Defines the document class, article is commonly used
+\usepackage[shortlabels]{enumitem}
+\usepackage{amsmath}    % Allows for more advanced math formatting
+\usepackage{amssymb}    % Provides additional mathematical symbols
+\usepackage{amsthm}     % \qed
+\usepackage{graphicx}   % image
+\usepackage{float}      % image placement
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,       % false: boxed links; true: colored links
+    linkcolor=black,       % color of internal links
+}
+\usepackage[margin=0.5in]{geometry}
+
+\begin{document}
+
+\title{EEC133 Midterm Formula Sheet}
+\author{Tao Wang}
+\date{\today}
+
+\maketitle
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{./image/figure1.png}
+    \caption{S Parameter}
+\end{figure}
+
+\textbf{db to dbm}
+\[P(\text{dBm}) = 10 \times \log(P(w)) + 30\]
+
+\textbf{Steradian:}
+\[A = r^2 \Omega\]
+
+\begin{center}
+    where A is the surface area patch, $r$ is the radius, and $\Omega$ is the solid angle.
+\end{center}
+
+
+\textbf{Half Power Beamwidth:}
+\[\theta_2 - \theta_1\]
+
+\begin{center}
+    where $\theta_2, \theta_1$ are the angles where the normalized radiation intensity is $\frac{1}{2}$.
+\end{center}
+
+\textbf{Directivity:}
+
+\[D_0 = \frac{4 \pi}{\Omega_p} = \frac{4 \pi}{\int_{sphere} F(\theta, \phi) d\Omega}\]
+
+\begin{center}
+    where $\Omega_p$ is the pattern solid angle.
+\end{center}
+
+\[\frac{A_e}{D_0} = \frac{\lambda^2}{4 \pi}\]
+
+\begin{center}
+    where $A_e$ is the effective area of the antenna, $D_0$ is the directivity of the antenna, and $\lambda$ is the wavelength of the wave transmitted by the antenna.
+\end{center}
+
+\textbf{Gain}
+\[G_0 = e \times D_0\]
+
+\begin{center}
+    where $e$ is the efficiency of the antenna.
+\end{center}
+
+\textbf{Poynting Vector}
+\[\vec{S}_{av} = \hat{z}\frac{|\widetilde{E}|^2}{2 \eta}\]
+
+\textbf{Friss Transmission Equation:}
+\[\frac{P_{rec}}{P_t} = e_t e_r \left(\frac{\lambda}{4\pi R}\right)^2 D_t D_r\]
+\[=\left(\frac{\lambda}{4\pi R}\right)^2 G_t G_r\]
+\[=\frac{e_r e_t A_t A_r}{\lambda^2 R^2}\]
+
+\begin{center}
+    where subscript t denotes the transmitter's parameter, r denotes the receiver's parameter, and R is the distance between two antennas.
+\end{center}
+
+\textbf{Vector Potential}
+\[\vec{H} = \frac{1}{\mu_0} \nabla \times \vec{A}\]
+
+\textbf{Retarded Potential}
+\[\widetilde{A}(\vec{r}) = \int \frac{\mu_0 \widetilde{J}(\vec{r})e^{-jkr}}{4\pi R} dV'\]
+
+
+
+\textbf{Hertzian Dipole Antenna:}
+$l < \frac{\lambda}{50}$
+
+Far Field ($r >> \lambda$)
+
+\[\widetilde{E}_{ff, \theta} = j \eta_0 \frac{I k l}{4 \pi r} e^{-jkr} \sin(\theta)\]
+\[\widetilde{H}_{ff, \phi} = \frac{\widetilde{E}_{ff, \theta}}{\eta_0}\]
+\[D(\theta, \phi) = 1.5 \sin^2(\theta)\]
+\[F(\theta, \phi) = \sin^2(\theta)\]
+\[P_{rad} = 40 \pi^2 I_0^2\left(\frac{l}{\lambda}\right)^2\]
+\[R_{rad} = 80 \pi^2 \left(\frac{l}{\lambda}\right)^2\]
+
+\textbf{Small dipole Antenna}: $l < \frac{\lambda}{10}$
+
+Fields are 1/2 those form the Hertzian Dipole.
+
+\[P_{rad} = 10 \pi^2 I_0^2\left(\frac{l}{\lambda}\right)^2\]
+\[R_{rad} = 20 \pi^2 \left(\frac{l}{\lambda}\right)^2\]
+
+\textbf{Small Loop Antenna:}
+$a << \frac{\lambda}{2 \pi}$
+
+Far Fields ($r >> \lambda$)
+
+\[\widetilde{H}_{\theta} = \frac{I k^2 (\pi a^2) }{4 \pi r} e^{-jkr}\sin(\theta)\]
+\[\widetilde{E}_{\phi} = -\widetilde{H}_{\theta} \eta_0\]
+
+\[D(\theta, \phi) = 1.5 \sin^2(\theta)\]
+\[R_{rad} = 320 \pi^6 \left(\frac{a}{\lambda}\right)^4 N^2\]
+
+Choosing Capacitor to be in parallel with loop antenna to cancel antenna's input reactance
+\[j\omega C - j \frac{X_A}{R_A^2 + X_A^2} = 0\]
+
+\begin{center}
+    where $X_A$ is the input reactance and $R_A$ is the input resistance of the antenna
+\end{center}
+
+\end{document}
