@@ -22,7 +22,7 @@
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.5\textwidth]{./image/figure1.png}
+    \includegraphics[width=0.4\textwidth]{./image/figure1.png}
     \caption{S Parameter}
 \end{figure}
 
@@ -68,6 +68,9 @@
 \textbf{Poynting Vector}
 \[\vec{S}_{av} = \hat{z}\frac{|\widetilde{E}|^2}{2 \eta}\]
 
+\textbf{Power Radiated from the Antenna}
+\[|\vec{S}_{avg}| = \frac{e_t P_{t}}{4 \pi r^2}D_t\]
+
 \textbf{Friss Transmission Equation:}
 \[\frac{P_{rec}}{P_t} = e_t e_r \left(\frac{\lambda}{4\pi R}\right)^2 D_t D_r\]
 \[=\left(\frac{\lambda}{4\pi R}\right)^2 G_t G_r\]
@@ -109,8 +112,8 @@ $a << \frac{\lambda}{2 \pi}$
 
 Far Fields ($r >> \lambda$)
 
-\[\widetilde{H}_{\theta} = \frac{I k^2 (\pi a^2) }{4 \pi r} e^{-jkr}\sin(\theta)\]
-\[\widetilde{E}_{\phi} = -\widetilde{H}_{\theta} \eta_0\]
+\[\widetilde{H}_{ff, \theta} = \frac{I k^2 (\pi a^2) }{4 \pi r} e^{-jkr}\sin(\theta)\]
+\[\widetilde{E}_{ff, \phi} = -\widetilde{H}_{\theta} \eta_0\]
 
 \[D(\theta, \phi) = 1.5 \sin^2(\theta)\]
 \[R_{rad} = 320 \pi^6 \left(\frac{a}{\lambda}\right)^4 N^2\]
