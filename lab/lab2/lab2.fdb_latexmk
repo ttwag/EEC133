@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1731222041.29984 "/Users/taowang/Desktop/EEC133/lab/lab2/lab2.tex" "lab2.pdf" "lab2" 1731222043.30424 0
-  "/Users/taowang/Desktop/EEC133/lab/lab2/lab2.tex" 1731222041.12074 9480 f796de2d0ce0620ebd0033503dc58835 ""
+["pdflatex"] 1731952586.16625 "/Users/taowang/Desktop/EEC133/lab/lab2/lab2.tex" "lab2.pdf" "lab2" 1731952588.07792 0
+  "/Users/taowang/Desktop/EEC133/lab/lab2/lab2.tex" 1731952585.98544 9478 cc2e0e8b19e0703160df48f994b66046 ""
   "/opt/homebrew/Cellar/texlive/20240312_1/share/texmf-dist/fonts/map/fontname/texfonts.map" 1710106625 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/opt/homebrew/Cellar/texlive/20240312_1/share/texmf-dist/fonts/map/pdftex/updmap/pdftex.map" 1710106625 5472554 f7861620179a71a79d4bd86251f559d0 ""
   "/opt/homebrew/Cellar/texlive/20240312_1/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1710106625 1004 54797486969f23fa377b128694d548df ""
@@ -111,12 +111,12 @@
   "image/figure5.png" 1731173041.81974 43623 b405bdf0f1a03dc6e6cf3f1a6d0f0a90 ""
   "image/figure6.png" 1731173041.81998 47528 13e1a7e40b0fb52be088e34842a1b579 ""
   "image/figure7.png" 1731173041.82038 99649 fbfdaa50ad2eaf68ae7c7e259b350aad ""
-  "image/figure8.png" 1731173041.82212 241108 d9ab98e1339e700e7c1b5c0a404a545d ""
-  "image/figure9.png" 1731173041.82131 253056 7f2a2992e6730e1c26b577583f8d4f5a ""
-  "lab2.aux" 1731222043.23944 2508 08de4b95896a7e532849f9f52f03d56d "pdflatex"
-  "lab2.out" 1731222043.24041 585 6012a012bedb682db421c0f9c2c66be8 "pdflatex"
-  "lab2.tex" 1731222041.12074 9480 f796de2d0ce0620ebd0033503dc58835 ""
-  "lab2.toc" 1731222043.2406 247 d81e406ae496e05ea5c38e9b4a3e3791 "pdflatex"
+  "image/figure8.png" 1731951894.96957 136409 b2a29786f0e2160aefdc03dc0937de4e ""
+  "image/figure9.png" 1731951894.96878 193229 576f221e61d551ca3d8a791318b6bf91 ""
+  "lab2.aux" 1731952588.014 2508 08de4b95896a7e532849f9f52f03d56d "pdflatex"
+  "lab2.out" 1731952588.01459 585 6012a012bedb682db421c0f9c2c66be8 "pdflatex"
+  "lab2.tex" 1731952585.98544 9478 cc2e0e8b19e0703160df48f994b66046 ""
+  "lab2.toc" 1731952588.01478 247 d81e406ae496e05ea5c38e9b4a3e3791 "pdflatex"
   (generated)
   "lab2.aux"
   "lab2.log"
