@@ -1,1 +1,5 @@
 \contentsline {section}{\numberline {1}A few simple dipole antennas}{1}{section.1}%
+\contentsline {section}{\numberline {2}The reactance of small dipole antennas}{4}{section.2}%
+\contentsline {section}{\numberline {3}Image charges and the quarter-wave monopole}{5}{section.3}%
+\contentsline {subsection}{Part 1: Image charges}{5}{section*.2}%
+\contentsline {subsection}{Part 2: The quarter-wave monopole}{6}{section*.3}%
