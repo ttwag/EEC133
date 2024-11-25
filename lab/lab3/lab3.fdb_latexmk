@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1732160653.01028 "/Users/taowang/Desktop/EEC133/lab/lab3/lab3.tex" "lab3.pdf" "lab3" 1732160653.64393 0
-  "/Users/taowang/Desktop/EEC133/lab/lab3/lab3.tex" 1732160652.77257 1449 71f2d6e26f299f44aefb9d68d733a3af ""
+["pdflatex"] 1732162090.47606 "/Users/taowang/Desktop/EEC133/lab/lab3/lab3.tex" "lab3.pdf" "lab3" 1732162091.31042 0
+  "/Users/taowang/Desktop/EEC133/lab/lab3/lab3.tex" 1732162090.2625 3024 0bb85d83bfb3cc5b2a4804d78cd43742 ""
   "/opt/homebrew/Cellar/texlive/20240312_1/share/texmf-dist/fonts/map/fontname/texfonts.map" 1710106625 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/opt/homebrew/Cellar/texlive/20240312_1/share/texmf-dist/fonts/map/pdftex/updmap/pdftex.map" 1710106625 5472554 f7861620179a71a79d4bd86251f559d0 ""
   "/opt/homebrew/Cellar/texlive/20240312_1/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1710106625 1004 54797486969f23fa377b128694d548df ""
@@ -31,6 +31,7 @@
   "/opt/homebrew/Cellar/texlive/20240312_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1710106625 35752 024fb6c41858982481f6968b5fc26508 ""
   "/opt/homebrew/Cellar/texlive/20240312_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1710106625 32722 d7379af29a190c3f453aba36302ff5a9 ""
   "/opt/homebrew/Cellar/texlive/20240312_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb" 1710106625 32362 179c33bbf43f19adbb3825bb4e36e57a ""
+  "/opt/homebrew/Cellar/texlive/20240312_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb" 1710106625 31809 8670ca339bf94e56da1fc21c80635e2a ""
   "/opt/homebrew/Cellar/texlive/20240312_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1710106625 32762 224316ccc9ad3ca0423a14971cfa7fc1 ""
   "/opt/homebrew/Cellar/texlive/20240312_1/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1710106625 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/opt/homebrew/Cellar/texlive/20240312_1/share/texmf-dist/tex/generic/atbegshi/atbegshi.sty" 1710106625 24708 5584a51a7101caf7e6bbf1fc27d8f7b1 ""
@@ -96,9 +97,13 @@
   "/opt/homebrew/Cellar/texlive/20240312_1/share/texmf-dist/web2c/texmf.cnf" 1710106625 41652 e14926ab86fde7902cad99d9eeaa5ca5 ""
   "/opt/homebrew/Cellar/texlive/20240312_1/share/texmf-var/web2c/pdftex/pdflatex.fmt" 1710106625 8221851 5146b755db1b51297976139fe7739199 ""
   "image/figure1.png" 1732160421.49102 51532 019ba0963de3700156f0cb041075eaf9 ""
-  "lab3.aux" 1732160653.59072 390 f34ba7e4587d66e6bfb4d38148c1ff97 "pdflatex"
-  "lab3.out" 1732160653.59123 79 119c2394c22b3526c70246dd09d00b46 "pdflatex"
-  "lab3.tex" 1732160652.77257 1449 71f2d6e26f299f44aefb9d68d733a3af ""
+  "image/figure2.png" 1732161249.78632 32983 4f09b9af6eb1c378617174e3b70f8a54 ""
+  "image/figure3.png" 1732161249.78668 62049 3b43209afa899fb178a83ef8c2f744f7 ""
+  "image/figure4.png" 1732161249.78717 98645 1d23afb252ffda4c5345c7988131bfc9 ""
+  "image/figure5.png" 1732161818.08609 95781 827206519c32b52f0bad943cdcdcee27 ""
+  "lab3.aux" 1732162091.25922 940 27c8db16c4bb3b6ad21376c6572de79e "pdflatex"
+  "lab3.out" 1732162091.25966 79 119c2394c22b3526c70246dd09d00b46 "pdflatex"
+  "lab3.tex" 1732162090.2625 3024 0bb85d83bfb3cc5b2a4804d78cd43742 ""
   (generated)
   "lab3.aux"
   "lab3.log"

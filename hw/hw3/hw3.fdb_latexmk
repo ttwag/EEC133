@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1732089721.94492 "/Users/taowang/Desktop/EEC133/hw/hw3/hw3.tex" "hw3.pdf" "hw3" 1732089722.57052 0
-  "/Users/taowang/Desktop/EEC133/hw/hw3/hw3.tex" 1732089721.71777 11160 7b36ccf8990e49a43b18b37dd59020cd ""
+["pdflatex"] 1732322039.22268 "/Users/taowang/Desktop/EEC133/hw/hw3/hw3.tex" "hw3.pdf" "hw3" 1732322039.86098 0
+  "/Users/taowang/Desktop/EEC133/hw/hw3/hw3.tex" 1732322039.04954 11183 dc00ec16aa9b3436c8c854a51eaad0ce ""
   "/opt/homebrew/Cellar/texlive/20240312_1/share/texmf-dist/fonts/map/fontname/texfonts.map" 1710106625 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/opt/homebrew/Cellar/texlive/20240312_1/share/texmf-dist/fonts/map/pdftex/updmap/pdftex.map" 1710106625 5472554 f7861620179a71a79d4bd86251f559d0 ""
   "/opt/homebrew/Cellar/texlive/20240312_1/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1710106625 1004 54797486969f23fa377b128694d548df ""
@@ -103,10 +103,10 @@
   "/opt/homebrew/Cellar/texlive/20240312_1/share/texmf-dist/tex/latex/url/url.sty" 1710106625 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "/opt/homebrew/Cellar/texlive/20240312_1/share/texmf-dist/web2c/texmf.cnf" 1710106625 41652 e14926ab86fde7902cad99d9eeaa5ca5 ""
   "/opt/homebrew/Cellar/texlive/20240312_1/share/texmf-var/web2c/pdftex/pdflatex.fmt" 1710106625 8221851 5146b755db1b51297976139fe7739199 ""
-  "hw3.aux" 1732089722.50969 1083 4591360c9c3382f0578ae51a6129d868 "pdflatex"
-  "hw3.out" 1732089722.51011 1113 3102c18949932724e677b43153391c1a "pdflatex"
-  "hw3.tex" 1732089721.71777 11160 7b36ccf8990e49a43b18b37dd59020cd ""
-  "hw3.toc" 1732089722.5103 421 e9479d3b87cb1daeab0a8519bad656bc "pdflatex"
+  "hw3.aux" 1732322039.79634 1083 51c2efaa9ecb46edbe7a4dfe6a593088 "pdflatex"
+  "hw3.out" 1732322039.7968 1113 3102c18949932724e677b43153391c1a "pdflatex"
+  "hw3.tex" 1732322039.04954 11183 dc00ec16aa9b3436c8c854a51eaad0ce ""
+  "hw3.toc" 1732322039.797 421 f099ab909e1da5ec471f236c32f19831 "pdflatex"
   "image/figure1.png" 1731878130.10568 29068 a9206f22602dbbfa1a9bf3c42762a7d6 ""
   "image/figure2.png" 1732048139.5947 35293 7345d09ebd314f39b5437f1efc2af47f ""
   (generated)
