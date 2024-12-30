@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Homebrew) (preloaded format=pdflatex 2024.7.14)  6 NOV 2024 18:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Homebrew) (preloaded format=pdflatex 2024.7.14)  12 DEC 2024 17:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -362,107 +362,79 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \tf@toc=\write4
 \openout4 = `part1.toc'.
 
-<./image/figure1.png, id=172, 676.5275pt x 561.09625pt>
+ [2]
+<./image/figure1.png, id=180, 676.5275pt x 561.09625pt>
 File: ./image/figure1.png Graphic file (type png)
 <use ./image/figure1.png>
-Package pdftex.def Info: ./image/figure1.png  used on input line 35.
+Package pdftex.def Info: ./image/figure1.png  used on input line 37.
 (pdftex.def)             Requested size: 317.98921pt x 263.74095pt.
- [2 <./image/figure1.png>]
 <./image/figure2.png, id=182, 514.92375pt x 519.9425pt>
 File: ./image/figure2.png Graphic file (type png)
 <use ./image/figure2.png>
-Package pdftex.def Info: ./image/figure2.png  used on input line 51.
+Package pdftex.def Info: ./image/figure2.png  used on input line 53.
 (pdftex.def)             Requested size: 238.49342pt x 240.81079pt.
- [3{/opt/homebrew/Cellar/texlive/20240312_1/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc} <./image/figure2.png>] [4]
-<./image/figure3.png, id=198, 471.7625pt x 599.23875pt>
+ [3{/opt/homebrew/Cellar/texlive/20240312_1/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc} <./image/figure1.png>] [4 <./image/figure2.png>]
+<./image/figure3.png, id=203, 471.7625pt x 599.23875pt>
 File: ./image/figure3.png Graphic file (type png)
 <use ./image/figure3.png>
-Package pdftex.def Info: ./image/figure3.png  used on input line 121.
+Package pdftex.def Info: ./image/figure3.png  used on input line 123.
 (pdftex.def)             Requested size: 198.7425pt x 252.44662pt.
- [5 <./image/figure3.png>]
-<./image/figure9.png, id=206, 650.43pt x 304.13625pt>
+ [5] [6 <./image/figure3.png>]
+<./image/figure9.png, id=215, 650.43pt x 304.13625pt>
 File: ./image/figure9.png Graphic file (type png)
 <use ./image/figure9.png>
-Package pdftex.def Info: ./image/figure9.png  used on input line 154.
+Package pdftex.def Info: ./image/figure9.png  used on input line 163.
 (pdftex.def)             Requested size: 198.7425pt x 92.9308pt.
- [6 <./image/figure9.png>]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 169.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 169.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 169.
-
-<./image/figure5.png, id=213, 493.845pt x 287.0725pt>
+ [7 <./image/figure9.png>]
+<./image/figure5.png, id=223, 493.845pt x 287.0725pt>
 File: ./image/figure5.png Graphic file (type png)
 <use ./image/figure5.png>
-Package pdftex.def Info: ./image/figure5.png  used on input line 173.
+Package pdftex.def Info: ./image/figure5.png  used on input line 182.
 (pdftex.def)             Requested size: 198.7425pt x 115.52782pt.
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 186.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 186.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 186.
-
-<./image/figure6.png, id=214, 557.08125pt x 545.03625pt>
+<./image/figure6.png, id=224, 557.08125pt x 545.03625pt>
 File: ./image/figure6.png Graphic file (type png)
 <use ./image/figure6.png>
-Package pdftex.def Info: ./image/figure6.png  used on input line 190.
+Package pdftex.def Info: ./image/figure6.png  used on input line 199.
 (pdftex.def)             Requested size: 397.485pt x 388.89958pt.
-[7 <./image/figure5.png>]
-<./image/figure7.png, id=225, 507.8975pt x 524.96124pt>
+ [8 <./image/figure5.png>]
+<./image/figure7.png, id=232, 507.8975pt x 524.96124pt>
 File: ./image/figure7.png Graphic file (type png)
 <use ./image/figure7.png>
-Package pdftex.def Info: ./image/figure7.png  used on input line 207.
+Package pdftex.def Info: ./image/figure7.png  used on input line 216.
 (pdftex.def)             Requested size: 198.7425pt x 205.41493pt.
- [8 <./image/figure6.png>]
-<./image/figure8.png, id=232, 765.86125pt x 299.1175pt>
+ [9 <./image/figure6.png>]
+<./image/figure8.png, id=239, 765.86125pt x 299.1175pt>
 File: ./image/figure8.png Graphic file (type png)
 <use ./image/figure8.png>
-Package pdftex.def Info: ./image/figure8.png  used on input line 224.
+Package pdftex.def Info: ./image/figure8.png  used on input line 233.
 (pdftex.def)             Requested size: 397.485pt x 155.24532pt.
- [9 <./image/figure7.png>] [10 <./image/figure8.png>]
-
-Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 273.
-
-<./image/figure4.png, id=245, 329.23pt x 230.8625pt>
+ [10 <./image/figure7.png>] [11 <./image/figure8.png>]
+<./image/figure4.png, id=253, 329.23pt x 230.8625pt>
 File: ./image/figure4.png Graphic file (type png)
 <use ./image/figure4.png>
-Package pdftex.def Info: ./image/figure4.png  used on input line 284.
+Package pdftex.def Info: ./image/figure4.png  used on input line 296.
 (pdftex.def)             Requested size: 198.7425pt x 139.364pt.
-[11] [12 <./image/figure4.png>] [13] [14] [15] [16] [17] (./part1.aux)
+ [12] [13 <./image/figure4.png>] [14] [15] [16] [17] [18] [19] (./part1.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
 Package rerunfilecheck Info: File `part1.out' has not changed.
-(rerunfilecheck)             Checksum: 36A03A7193DA90B223EED7655958C02A;4944.
+(rerunfilecheck)             Checksum: 4C709CA80F67CC25FA443A0C4D3B26FB;4945.
  ) 
 Here is how much of TeX's memory you used:
- 10417 strings out of 474116
- 161650 string characters out of 5732613
- 1940187 words of memory out of 5000000
- 32583 multiletter control sequences out of 15000+600000
+ 10421 strings out of 474116
+ 161734 string characters out of 5732613
+ 1943187 words of memory out of 5000000
+ 32584 multiletter control sequences out of 15000+600000
  566613 words of font info for 69 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,7n,79p,586b,623s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</opt/homebrew/Cellar/texlive/20240312_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></opt/homebrew/Cellar/texlive/20240312_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></opt/homebrew/Cellar/texlive/20240312_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></opt/homebrew/Cellar/texlive/20240312_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></opt/homebrew/Cellar/texlive/20240312_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></opt/homebrew/Cellar/texlive/20240312_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></opt/homebrew/Cellar/texlive/20240312_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></opt/homebrew/Cellar/texlive/20240312_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></opt/homebrew/Cellar/texlive/20240312_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></opt/homebrew/Cellar/texlive/20240312_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></opt/homebrew/Cellar/texlive/20240312_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></opt/homebrew/Cellar/texlive/20240312_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></opt/homebrew/Cellar/texlive/20240312_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></opt/homebrew/Cellar/texlive/20240312_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></opt/homebrew/Cellar/texlive/20240312_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></opt/homebrew/Cellar/texlive/20240312_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></opt/homebrew/Cellar/texlive/20240312_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></opt/homebrew/Cellar/texlive/20240312_1/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on part1.pdf (17 pages, 1851505 bytes).
+ 75i,7n,79p,586b,535s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</opt/homebrew/Cellar/texlive/20240312_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></opt/homebrew/Cellar/texlive/20240312_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></opt/homebrew/Cellar/texlive/20240312_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></opt/homebrew/Cellar/texlive/20240312_1/share/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></opt/homebrew/Cellar/texlive/20240312_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></opt/homebrew/Cellar/texlive/20240312_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></opt/homebrew/Cellar/texlive/20240312_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></opt/homebrew/Cellar/texlive/20240312_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></opt/homebrew/Cellar/texlive/20240312_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></opt/homebrew/Cellar/texlive/20240312_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></opt/homebrew/Cellar/texlive/20240312_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></opt/homebrew/Cellar/texlive/20240312_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></opt/homebrew/Cellar/texlive/20240312_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></opt/homebrew/Cellar/texlive/20240312_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></opt/homebrew/Cellar/texlive/20240312_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></opt/homebrew/Cellar/texlive/20240312_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></opt/homebrew/Cellar/texlive/20240312_1/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on part1.pdf (19 pages, 1846258 bytes).
 PDF statistics:
- 375 PDF objects out of 1000 (max. 8388607)
- 299 compressed objects within 3 object streams
- 63 named destinations out of 1000 (max. 500000)
- 294 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 385 PDF objects out of 1000 (max. 8388607)
+ 308 compressed objects within 4 object streams
+ 66 named destinations out of 1000 (max. 500000)
+ 302 words of extra memory for PDF output out of 10000 (max. 10000000)
 

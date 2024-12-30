@@ -20,8 +20,10 @@
 
 \maketitle
 \tableofcontents
+\pagebreak
 
-\section{Spherical Coordinate}
+\section{Coordinates and Units}
+\subsection{Spherical Coordinate}
 \begin{quote}
     A position in spherical coordinate is characterized by $R, \space \theta, \space \phi$.
     An infinitesimal surface area patch, $dA$, is $dA = R^2 \sin(\theta) \space d\theta d\phi$.
@@ -36,13 +38,13 @@
     \caption{Spherical Coordinate}
 \end{figure}
 
-\section{Radian and Steradian}
+\subsection{Radian and Steradian}
 \begin{itemize}
     \item \textbf{Radian}: measure of \textit{angle}. $s = r \theta$, where $s$ is the arc length, $r$ is the radius, and $\theta$ is the angle in radian.
     \item \textbf{Steradian}: measure of \textit{solid angle}. $A = r^2 \Omega$, where $A$ is the surface area patch, $r$ is the radius, and $\Omega$ is the solid angle.
 \end{itemize}
 
-\section{Properties of Antenna Wave}
+\section{Wave Radiation}
 \begin{quote}
     The wave propagates spherically according to the Maxwell's Equations. Moreover, we could approximate the radiated wave to be a plain wave because the wavefront looks flat and field is approximately constant.
 \end{quote}
@@ -87,7 +89,7 @@
 
 \end{quote}
 
-\section{Directivity}
+\subsection{Directivity}
 \begin{quote}
     Since the radiation intensity, $U(\phi, \theta)$, is dependent of the total radiated power, we want to define another quantity that is independent of the radiated power.
 
@@ -112,7 +114,7 @@
 
 \end{quote}
 
-\section{Beamwidth}
+\subsection{Beamwidth}
 
 Beamwidth tells us how much the opening is for a lobe. A lobe is a region where radiation intensity is the highest.
 
@@ -130,8 +132,15 @@ where $\theta_2$ is the angle where the normalized radiation intensity is $\frac
 
 It occurs at $\theta = \frac{\pi}{4}$ and $\theta = \frac{3\pi}{4}$.
 
+\section{Antenna }
+\subsection{What Makes a Good Antenna?}
+\begin{itemize}
+    \item Good Radiation Pattern
+    \item Good matching (nice circuit properties)
+    \item Good size
+\end{itemize}
 
-\section{Antenna Parameters}
+\subsection{Antenna Parameters}
 \begin{itemize}
     \item Radiation Intensity ($\frac{\text{Watts}}{\text{Steradian}}$): the amount of power radiated by the antenna to different directions.
           \[U(\theta, \phi)\]
@@ -148,13 +157,13 @@ It occurs at $\theta = \frac{\pi}{4}$ and $\theta = \frac{3\pi}{4}$.
           where efficiency is $\frac{P_{rad}}{P_{in}}$
 \end{itemize}
 
-\section{Circuit Model of an Antenna}
+\subsection{Circuit Model of an Antenna}
 \begin{figure}[H]2
     \centering
     \includegraphics[width=0.5\textwidth]{./image/figure9.png}
     \caption{Circuit Model of an Antenna}
 \end{figure}
-\subsection{Power}
+\subsection{Power Dissipated by the Antenna}
 \begin{quote}
     Since the antenna dissipates power, radiate power, and reflects the transmitted power, we can model it as a load impedance that has resistance and reactance.
     \[Z_A = R_L + R_{rad} + j X_A\]
@@ -166,7 +175,7 @@ It occurs at $\theta = \frac{\pi}{4}$ and $\theta = \frac{3\pi}{4}$.
     \[e = \frac{P_{rad}}{P_{in}} = \frac{\frac{1}{2}|\tilde{I}|^2 (R_{rad})}{P_{in} = \frac{1}{2}|\tilde{I}|^2 (R_{rad} + R_L)} = \frac{R_{rad}}{R_{rad} + R_L}\]
 \end{quote}
 
-\subsection{Optimizing $P_{in}$}
+\subsection{Optimize Power Dissipation}
 
 \begin{figure}[H]
     \centering
@@ -183,7 +192,7 @@ It occurs at $\theta = \frac{\pi}{4}$ and $\theta = \frac{3\pi}{4}$.
     \[P_{in} = \frac{1}{2}|\tilde{I}|^2 R_A = \frac{1}{2}\left(\frac{|\tilde{V}_{TH}|}{2R_A}\right)^2R_A = \frac{|\tilde{V}_{TH}|^2}{8R_A}\]
 \end{quote}
 
-\subsection{Optimizing $P_{out}$}
+\subsection{Optimize Power Received}
 
 \begin{figure}[H]
     \centering
@@ -217,7 +226,7 @@ It occurs at $\theta = \frac{\pi}{4}$ and $\theta = \frac{3\pi}{4}$.
     \[|\tilde{V}_{TH}| = \sqrt{8 R_A A_e S_i}\]
 \end{quote}
 
-\section{Antenna Links}
+\subsection{Antenna Links}
 
 \begin{figure}[H]
     \centering
@@ -233,6 +242,10 @@ It occurs at $\theta = \frac{\pi}{4}$ and $\theta = \frac{3\pi}{4}$.
 
     where $A_r$, $A_t$ are the effective area of the antenna, $e_r, e_t$ are the efficiency of the antenna, $\lambda$ is the wavelength of the transmitted wave, and $D_r, D_t$ are the directivity of the antennas.
 
+    Moreover, we could write the time average power transmitted by the antenna as:
+    \[|\vec{S}_{avg}| = \frac{e_t P_{t}}{4 \pi r^2}D_t\]
+
+    Using this formula and $\vec{S}_{av} = \hat{z}\frac{|\widetilde{E}|^2}{2 \eta}$, we can find the electric field magnitude carried by the wave.
 
 \end{quote}
 
@@ -242,7 +255,6 @@ It occurs at $\theta = \frac{\pi}{4}$ and $\theta = \frac{3\pi}{4}$.
 
 \section{Maxwell's Equation}
 \begin{quote}
-    % Add the differential version
 
     The divergence of E field is proportional to enclosed charge because more charges produces more E field.
 
@@ -270,7 +282,7 @@ It occurs at $\theta = \frac{\pi}{4}$ and $\theta = \frac{3\pi}{4}$.
     $$\oint \vec{B} \cdot d\vec{l} = \mu_0 i + \mu_0 \epsilon_0 \frac{d \phi_E}{dt}$$
 \end{quote}
 
-\subsubsection{Inhomogeneous Wave Equation}
+\subsection{Inhomogeneous Wave Equation}
 \begin{quote}
     When we construct the wave equation with Maxwell's Equation with source, we get
     \[\nabla^2\vec{E}-\mu_0\epsilon_0 \frac{\partial ^2}{\partial t^2}\vec{E} = \nabla\left(\frac{\rho}{\epsilon_0}\right) + \mu_0 \frac{\partial}{\partial t} \vec{J}\]
@@ -348,70 +360,75 @@ It occurs at $\theta = \frac{\pi}{4}$ and $\theta = \frac{3\pi}{4}$.
     E and H field produced by $\phi_{new}$ and $\vec{A}_{new}$ are same as those made by $\phi$ and $\vec{A}$
 \end{quote}
 
-%Rewrite the inhomogeneous wave equation with the vector potential
-
 \section{Retarded Potential}
+\begin{quote}
+    The vector potential at a point $r$ produced by a time varying current source, $\widetilde{J}(\vec{r})$.
+
+    \[\widetilde{A}(\vec{r}) = \int \frac{\mu_0 \widetilde{J}(\vec{r})e^{-jkr}}{4\pi R} dV'\]
+
+    The key insight is that the wave will update the potential at the point $r$ after some phase delay $kr \propto \frac{r}{\lambda}$ because it takes times for the EM wave to travel to that location; that is, the potential cannot change instantaneously.
+
+    The retarded potential will allow us to calculate the fields radiated by the antenna because the antenna is driven by time varying current source.
+\end{quote}
 
 \section{The Hertzian Dipole}
 \begin{quote}
-    \subsection{Basics of Hertzian Dipole}
-    \begin{itemize}
-        \item A very short ($l \leq \frac{\lambda}{50}$) infinitesimally thin, wire carrying a uniform current.
-    \end{itemize}
-
-    $\vec{J}(\vec{r'}) = I_0 \delta(x)\delta(y)$
+    A very short ($l \leq \frac{\lambda}{50}$) infinitesimally thin, wire carrying a uniform current:
+    \[\vec{J}(\vec{r'}) = I_0 \delta(x)\delta(y)\]
 
     Recall that we are in sinusoidal steady state.
 
     \[\rho(\vec{r}, t) = \Re \{\tilde{\rho}(\vec{r})e^{j \omega t}\}\]
 
     \[\vec{J}(\vec{r}, t) = \Re \{\tilde{J}(\vec{r})e^{j \omega t}\}\]
-
-    Procedure to find the Antenna Parameters of the Hertzian Dipole
-    \begin{enumerate}
-        \item Calculate $\tilde{A}(\vec{r})$ using retarded potentials.
-              \[\tilde{A} = \frac{\mu_0}{4 \pi}\int \frac{\vec{J}(\vec{r'})}{R}e^{-jkR}dV'\]
-              Since R = r and is approximately constant every point on the wire,
-              \[= \frac{\mu_0}{4 \pi}\frac{e^{-jkr}}{r} \int \vec{J}(\vec{r'})dV'\]
-              \[= \frac{\mu_0}{4 \pi}\frac{e^{-jkr}}{r}\int \int \vec{J}(\vec{r'})  I_0 \delta(x)\delta(y) \cdot d\vec{A} dz\]
-              \[\frac{\mu_0}{4 \pi}\frac{e^{-jkr}}{r}\int_{\frac{-l}{2}}^{\frac{l}{2}}I_0 \vec{z} dz\]
-              \[= \frac{\mu_0 I_0 l}{4 \pi}\frac{e^{-jkr}}{r}\vec{z}\]
-              \[= \frac{\mu_0 I_0 l}{4 \pi}\frac{e^{-jkr}}{r}(\cos(\theta) \hat{r} -\sin(\theta) \hat{\theta})\]
-        \item Find H and E fields from $\tilde{A}(\vec{r})$.
-
-              \bigskip
-              Taking the curl in spherical coordinate
-              \[\tilde{H} = \frac{1}{\mu_0}\frac{\mu_0 I_0 l e^{-jkr}}{4 \pi}\left(\frac{j}{kr} + \frac{1}{(kr)^2}\right)\sin(\theta)\hat{\phi}\]
-              % Miss a term
-              \[\tilde{E}= \frac{I_0 l k^2}{4 \pi}\eta_0 e^{-jkr}(\left(\frac{1}{kr} - \frac{j}{(kr)^3}\right)2\cos(\theta)\hat{\phi}) \]
-        \item Break the H and E field into Near and Far Fields.
-
-              \bigskip
-              E field looks very complicated, so we will define two regions of $kr$ that simplifies the expression
-
-              \bigskip
-              Near Field: $kr << 1 \implies \frac{2 \pi}{\lambda} r << 1$
-              \[\tilde{H}_{nF} = \frac{I_0 l}{4 \pi r^2}\sin(\theta) \hat{\phi}\]
-              \[\tilde{E}_{nF} = \frac{q l}{4 \pi \epsilon_0 r^3}(2 \cos(\theta) \hat{r} + \sin(\theta) \hat{\theta})\]
-
-              Notice that it looks like an electrostatic dipole
-
-              \bigskip
-              Far Field: $kr >> 1$ (generally what we care about)
-              \[\tilde{H}_{FF} = \frac{\tilde{E}_{FF}}{\eta_0}\hat{\phi}\]
-              \[\tilde{E}_{FF} = j\eta_0\frac{I_0 l k^2}{4 \pi} e^{-jkr}\sin(\theta)\hat{\theta}\]
-
-        \item Find $\vec{S}_{avg}$ and antenna parameters.
-              \[\vec{S}_{avg} = \frac{1}{2}\Re\{\tilde{E} \times \tilde{H}\}\]
-              \[= \frac{1}{2 \eta_0} |\tilde{E}_{FF}|^2 \hat{r}\]
-
-
-              Therefore,
-              \[| \vec{S}_{avg} | = \frac{1}{2 \eta_0} \left(\eta_0 \frac{Ilk}{4 \pi r}\sin(\theta)\right)^2 = \frac{15 \pi I_0 ^2}{r^2}\left(\frac{l}{\lambda}\right)^2 \sin^2(\theta)\]
-    \end{enumerate}
 \end{quote}
+\subsection{Derivation}
+\begin{quote}
+    Procedure to find the Antenna Parameters of the Hertzian Dipole.
+\end{quote}
+\begin{enumerate}
+    \item Calculate $\tilde{A}(\vec{r})$ using retarded potentials.
+          \[\tilde{A} = \frac{\mu_0}{4 \pi}\int \frac{\vec{J}(\vec{r'})}{R}e^{-jkR}dV'\]
+          Since R = r and is approximately constant every point on the wire,
+          \[= \frac{\mu_0}{4 \pi}\frac{e^{-jkr}}{r} \int \vec{J}(\vec{r'})dV'\]
+          \[= \frac{\mu_0}{4 \pi}\frac{e^{-jkr}}{r}\int \int \vec{J}(\vec{r'})  I_0 \delta(x)\delta(y) \cdot d\vec{A} dz\]
+          \[\frac{\mu_0}{4 \pi}\frac{e^{-jkr}}{r}\int_{\frac{-l}{2}}^{\frac{l}{2}}I_0 \vec{z} dz\]
+          \[= \frac{\mu_0 I_0 l}{4 \pi}\frac{e^{-jkr}}{r}\vec{z}\]
+          \[= \frac{\mu_0 I_0 l}{4 \pi}\frac{e^{-jkr}}{r}(\cos(\theta) \hat{r} -\sin(\theta) \hat{\theta})\]
+    \item Find H and E fields from $\tilde{A}(\vec{r})$.
 
-\subsection{Hertzian Dipole's Antenna Parameter}
+          \bigskip
+          Taking the curl in spherical coordinate
+          \[\tilde{H} = \frac{1}{\mu_0}\frac{\mu_0 I_0 l e^{-jkr}}{4 \pi}\left(\frac{j}{kr} + \frac{1}{(kr)^2}\right)\sin(\theta)\hat{\phi}\]
+          % Miss a term
+          \[\tilde{E}= \frac{I_0 l k^2}{4 \pi}\eta_0 e^{-jkr}(\left(\frac{1}{kr} - \frac{j}{(kr)^3}\right)2\cos(\theta)\hat{\phi}) \]
+    \item Break the H and E field into Near and Far Fields.
+
+          \bigskip
+          E field looks very complicated, so we will define two regions of $kr$ that simplifies the expression
+
+          \bigskip
+          Near Field: $kr << 1 \implies \frac{2 \pi}{\lambda} r << 1$
+          \[\tilde{H}_{nF} = \frac{I_0 l}{4 \pi r^2}\sin(\theta) \hat{\phi}\]
+          \[\tilde{E}_{nF} = \frac{q l}{4 \pi \epsilon_0 r^3}(2 \cos(\theta) \hat{r} + \sin(\theta) \hat{\theta})\]
+
+          Notice that it looks like an electrostatic dipole
+
+          \bigskip
+          Far Field: $kr >> 1$ (generally what we care about)
+          \[\tilde{H}_{FF} = \frac{\tilde{E}_{FF}}{\eta_0}\hat{\phi}\]
+          \[\tilde{E}_{FF} = j\eta_0\frac{I_0 l k^2}{4 \pi} e^{-jkr}\sin(\theta)\hat{\theta}\]
+
+    \item Find $\vec{S}_{avg}$ and antenna parameters.
+          \[\vec{S}_{avg} = \frac{1}{2}\Re\{\tilde{E} \times \tilde{H}\}\]
+          \[= \frac{1}{2 \eta_0} |\tilde{E}_{FF}|^2 \hat{r}\]
+
+
+          Therefore,
+          \[| \vec{S}_{avg} | = \frac{1}{2 \eta_0} \left(\eta_0 \frac{Ilk}{4 \pi r}\sin(\theta)\right)^2 = \frac{15 \pi I_0 ^2}{r^2}\left(\frac{l}{\lambda}\right)^2 \sin^2(\theta)\]
+\end{enumerate}
+
+\subsection{Antenna Parameter}
 \begin{quote}
     A Hertzian Dipole is a type of dipole antenna with
     \[l < \frac{\lambda}{50} \]
@@ -489,20 +506,27 @@ It occurs at $\theta = \frac{\pi}{4}$ and $\theta = \frac{3\pi}{4}$.
 \[R_{in} = \frac{P_{rad}}{I_0^2 \sin^2\left(\frac{kl}{2}\right)}\]
 \[R_{in} = \frac{R_{rad}}{\sin^2\left(\frac{kl}{2}\right)}\]
 
-\section{Physical Intuition on Radiation}
-\subsection{Why Transmission Line doesn't Radiate Wave}
-
-
-\section{What Makes a Good Antenna?}
-\begin{itemize}
-    \item Good Radiation Pattern
-    \item Good matching (nice circuit properties)
-\end{itemize}
 
 \section{Loop Antenna}
 \begin{quote}
-    Loop antenna is the dual of the dipole antenna.
+    Loop antenna is the dual of the dipole antenna. Just like inductor and capacitor.
+    Here, we'll examine the small loop antenna.
 \end{quote}
+
+\subsection{Small Loop Antenna}
+\begin{quote}
+    The small loop antenna has a radius, $a << \frac{\lambda}{6 \pi}$.
+\end{quote}
+\begin{quote}
+    At Far Fields ($r >> \lambda$)
+\end{quote}
+
+\[\widetilde{H}_{ff, \theta} = \frac{I k^2 (\pi a^2) }{4 \pi r} e^{-jkr}\sin(\theta)\]
+\[\widetilde{E}_{ff, \phi} = -\widetilde{H}_{\theta} \eta_0\]
+
+\[D(\theta, \phi) = 1.5 \sin^2(\theta)\]
+\[R_{rad} = 320 \pi^6 \left(\frac{a}{\lambda}\right)^4 N^2\]
+
 
 \section{Antenna Array}
 
