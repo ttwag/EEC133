@@ -4,7 +4,7 @@ This repository contains notes and homework answers for EEC133 from the Universi
 
 **Be aware that the homework answers might be incorrect. Use at your own discretion. The author does not have any responsibility over the consequences of using these materials.**
 
-![Figure1](./image/figure1.jpeg)
+![Figure1](./figure1.jpeg)
 
 ## Lecture notes
 * [Introduction to Antennas](./lecture/part1/part1.pdf)
